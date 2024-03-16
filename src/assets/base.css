@@ -1,20 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
 	--color-background: #dddcea;
-	--color-primary: #b3bdd6;
-	--color-secondary: #b3bdd6;
-	--color-white: #f7f7f7;
-	--color-text: #434343;
+	--color-primary: #333a47;
+	--color-secondary: #72798d;
+	--color-text-light: #f7f7f7;
+	--color-text-dark: #333a47;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-background: #16161b;
 		--color-primary: #191c23;
-		--color-secondary: #22293d;
-		--color-white: #f7f7f7;
-		--color-text: #191c23;
+		--color-secondary: #2c323f;
+		--color-text-light: #f7f7f7;
+		--color-text-dark: #191c23;
 	}
 }
 
@@ -28,13 +28,10 @@
 
 body {
 	min-height: 100vh;
-	color: var(--color-text);
+	color: var(--color-text-light);
 	background: var(--color-background);
-	transition:
-		color 0.5s,
-		background-color 0.5s;
 	line-height: 1.6;
-	font-family: "Quicksand", sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 15px;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
