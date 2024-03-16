@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHistory("/vue-web-calc/"),
 	routes: [
 		{
-			path: '/vue-web-calc/',
+			path: '/',
 			name: 'home',
 			component: () => import('../views/CalculatorView.vue')
 		},
 		{
-			path: '/vue-web-calc/about',
+			path: '/about',
 			name: 'about',
 			// route level code-splitting
 			// this generates a separate chunk (About.[hash].js) for this route
