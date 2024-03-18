@@ -24,12 +24,9 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 header {
-	margin: auto;
-	height: 15vh;
-	width: 100vw;
+	margin-top: 5vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 #RouterLinks {
@@ -46,10 +43,22 @@ header {
 
 #RouterView {
 	margin: auto;
-	height: 80vh;
-	width: 100vw;
+	height: 75vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media only screen and ((max-width: 850px) or (max-height: 750px)) {
+	header {
+		margin-top: 0;
+	}
+
+	#RouterLinks {
+		margin-top: 0;
+		width: 100vw;
+		border-radius: 0;
+
+	}
 }
 </style>
