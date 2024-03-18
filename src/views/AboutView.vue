@@ -5,22 +5,26 @@
 <template>
 	<div>
 		<h1>About</h1>
-		<ul>
+		<ul id="MainList">
 			<li>
-				<h2>Whats the purpose of this site?</h2>
+				<h2>- Whats the purpose of this site?</h2>
 			</li>
 			<p>Anwser: I have made it only to learn Vue better.</p>
 			<li>
-				<h2>What technologies does this site uses?</h2>
+				<h2>- Technologies used?</h2>
 			</li>
-			<p>Anwser: it uses Vue as a framework,<br> SCSS for styles and Vue Routers for diffrent pages, all hosted
-				on github.</p>
+			<ul id="SecondList">
+				<li>- Framework: Vue</li>
+				<li>- Routing: Vue Routing</li>
+				<li>- Styles: SCSS</li>
+				<li>- Language: TypeScript</li>
+			</ul>
 			<li>
-				<h2>Is it open source?</h2>
+				<h2>- Is it open source?</h2>
 			</li>
 			<p>Anwser: yes, it is, <a href="https://github.com/opkvysxct/vue-web-calc">repository link.</a></p>
 			<li>
-				<h2>Something more?</h2>
+				<h2>- Something more?</h2>
 			</li>
 			<p>Anwser: i guess not</p>
 		</ul>
@@ -45,13 +49,17 @@ a {
 	font-size: 1rem;
 }
 
-ul {
-	margin: 1.5vh 7.5vh 5vh 7.5vh;
+li {
+	list-style: none;
+}
+
+#MainList {
+	margin: 1.5vh 7.5vh 0vh 7.5vh;
+
 }
 
 div {
 	display: flex;
-	justify-content: baseline;
 	align-items: center;
 	flex-direction: column;
 	height: auto;
@@ -67,7 +75,7 @@ a {
 	color: inherit;
 }
 
-@media only screen and ((max-width: 850px) or (max-height: 750px)) {
+@media only screen and ((max-width: 850px) or (max-height: 800px)) {
 	div {
 		height: auto;
 		width: auto;
@@ -75,7 +83,7 @@ a {
 		max-height: 95vh;
 	}
 
-	ul {
+	#MainList {
 		margin: 0 2.5vh 5vh 2.5vh;
 	}
 
