@@ -1,1 +1,21 @@
-@import "./base.css";
+@import "./theme.css";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	font-weight: normal;
+}
+
+body {
+	min-height: 100vh;
+	color: var(--color-text-light);
+	background: var(--color-background);
+	line-height: 1.6;
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

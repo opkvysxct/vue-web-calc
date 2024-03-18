@@ -6,7 +6,7 @@
 	<h1>Calculator</h1>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 h1 {
 	color: white;
 }

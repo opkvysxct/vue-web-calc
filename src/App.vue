@@ -14,7 +14,7 @@ import { RouterLink, RouterView } from 'vue-router'
 	</div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .Link {
 	color: var(--color-text-light);
 	text-decoration: unset;
@@ -25,7 +25,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 header {
 	margin: auto;
-	height: 20vh;
+	height: 15vh;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -39,9 +39,9 @@ header {
 	align-items: center;
 	padding: 1rem;
 	display: flex;
-	border-radius: 0.5vw;
+	border-radius: 0.75vw;
 	box-shadow: -0.25vh 0.5vh 1vh rgba(0, 0, 0, 0.25);
-	width: 40vh;
+	width: 35vh;
 }
 
 #RouterView {
