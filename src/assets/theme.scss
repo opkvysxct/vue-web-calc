@@ -3,6 +3,7 @@
 :root {
 	--color-background: #dddcea;
 	--color-negative: #16161b;
+	--color-negative-alpha: #dddcea80;
 	--color-primary: #333a47;
 	--color-secondary: #72798d;
 	--color-text-light: #f7f7f7;
@@ -13,6 +14,7 @@
 	:root {
 		--color-background: #16161b;
 		--color-negative: #dddcea;
+		--color-negative-alpha: #dddcea80;
 		--color-primary: #191c23;
 		--color-secondary: #2c323f;
 		--color-text-light: #f7f7f7;
