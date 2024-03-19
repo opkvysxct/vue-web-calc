@@ -18,12 +18,20 @@ import ThemeChanger from './components/ThemeChanger.vue'
 </template>
 
 <style lang="scss" scoped>
+@use "./assets/theme" as theme;
+
 .Link {
-	color: var(--color-text-light);
+	color: theme.$color-text-light;
 	text-decoration: unset;
 	font-size: 1.5rem;
+	transition: 100ms;
 	font-weight: 550;
 	margin: 0.5rem;
+}
+
+.Link:hover {
+	margin: 0.5rem 0.75rem 0.5rem 0.75rem;
+	font-weight: 750;
 }
 
 header {
@@ -34,7 +42,7 @@ header {
 }
 
 #RouterLinks {
-	background-color: var(--color-primary);
+	background-color: theme.$color-primary;
 	display: flex;
 	justify-content: center;
 	align-items: center;

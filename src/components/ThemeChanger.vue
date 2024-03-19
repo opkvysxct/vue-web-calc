@@ -7,16 +7,14 @@ function test() {
 <template>
 	<div>
 		<button @click="test()">
-			<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 1472 1536">
-				<path fill="currentColor"
-					d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72z" />
-			</svg>
+			<font-awesome-icon :icon="['fas', 'moon']" />
 		</button>
 	</div>
 </template>
 
 <style lang="scss" scoped>
-$SVGSize: 5vh;
+@use "../assets/theme.scss" as theme;
+$--SVGSize: 5vh;
 
 div {
 	display: flex;
@@ -28,24 +26,25 @@ div {
 }
 
 svg {
-	color: var(--color-text-light);
+	color: theme.$color-text-light;
+	transform-origin: center;
 	transition: 100ms;
 	padding: 0.75vh;
-	height: $SVGSize;
-	width: $SVGSize;
+	height: --SVGSize;
+	width: --SVGSize;
 }
 
 button {
 	transition: 100ms;
 	margin: 2vh;
-	background-color: var(--color-secondary);
+	background-color: theme.$color-secondary;
 	border: none;
 	border-radius: 50%;
 	box-shadow: -0.25vh 0.5vh 1vh rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
-	box-shadow: 0 0 2vh var(--color-negative-alpha);
+	box-shadow: 0 0 2vh theme.$color-negative-alpha;
 }
 
 button:active {

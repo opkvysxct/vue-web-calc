@@ -32,6 +32,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/theme.scss" as theme;
+
 h1 {
 	margin-top: 4vh;
 	font-size: 3rem;
@@ -67,7 +69,7 @@ div {
 	max-height: 85vh;
 	max-width: 80vw;
 	border-radius: 0.75vw;
-	background-color: var(--color-primary);
+	background-color: theme.$color-primary;
 	box-shadow: -0.25vh 0.5vh 1vh rgba(0, 0, 0, 0.25);
 }
 

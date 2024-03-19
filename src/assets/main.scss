@@ -1,4 +1,5 @@
-@import "./theme.scss";
+@use "./theme" as theme;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 *,
 *::before,
@@ -10,8 +11,8 @@
 
 body {
 	min-height: 100vh;
-	color: var(--color-text-light);
-	background: var(--color-background);
+	color: theme.$color-text-light;
+	background: theme.$color-background;
 	line-height: 1.6;
 	font-family: "Inter", sans-serif;
 	font-size: 15px;

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
 :root {
 	--color-background: #dddcea;
 	--color-negative: #16161b;
@@ -21,3 +19,11 @@
 		--color-text-dark: #191c23;
 	}
 }
+
+$color-background: var(--color-background);
+$color-negative: var(-color-negative);
+$color-negative-alpha: var(color-negative-alpha);
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-text-light: var(--color-text-light);
+$color-text-dark: var(--color-text-dark);
